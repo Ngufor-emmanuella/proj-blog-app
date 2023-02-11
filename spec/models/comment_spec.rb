@@ -1,14 +1,43 @@
 require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
-  subject(:comment) { Comment.create(post_id: 1, author_id: 1, text: 'This is a comment') }
+  subject { Comment.new(text: 'i love this', author_id: 7, post_id: 7) }
+  before { subject.save }
 
-  it 'Post id should be present' do
-    comment.post_id = nil
-    expect(comment).to_not be_valid
+  it 'expects author_id to be present in the comment' do
+    subject.author_id.nil?
+    expect(subject).to_not be_valid
   end
-  it 'Author id should be present' do
-    comment.author_id = nil
-    expect(comment).to_not be_valid
+
+
+  it 'expects text to be present in the comment' do
+    subject.text.nil?
+    expect(subject).to_not be_valid
+  end
+
+  it 'expects author_id to be valid' do
+    expect(subject.author_id).to eql 7
+  end
+
+
+  it 'expects author_id to be an integer' do
+    subject.author_id = 'abc'
+    expect(subject).to_not be_valid
+  end
+
+  it 'expects post_id to be an integer' do
+    subject.post_id = 'abc'
+    expect(subject).to_not be_valid
+  end
+
+
+  it 'expects post_id to be present in the comment' do
+    subject.post_id.nil?
+    expect(subject).to_not be_valid
+  end
+
+
+  it 'expects post_id to be valid' do
+    expect(subject.post_id).to eql 7
   end
 end
