@@ -1,12 +1,5 @@
-<div class="post">
-  <div class="title-info">
-    <h2>Post #<%= @post.id%></h2>
-    <p>Comments: <%= @post.comments_counter%> Likes: <%= @post.likes_counter%></p>
+<section class="all_users_container">
+  <div>
+    <%= render partial: "shared/user", collection: @users, as: :user || ">No users found" %>
   </div>
-  <p><%= @post.text%></p>
-</div>
-<div class="comments">
-  <% @post.comments.each do |comment|%>
-    <p><%= User.find(comment.author_id).name %>: <%= comment.text %></p>
-  <%end%>
-</div>
+</section> 
