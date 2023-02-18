@@ -1,23 +1,62 @@
-.post {
-  border: 2px solid;
-  margin: 2% 0 0 0;
-  padding: 2%;
-}
-
-.likes-comments {
-  padding-left: 80%;
-  margin: 0;
-  width: fit-content;
-}
-
-.comments {
-  border: 2px solid;
-  padding: 0 1%;
-  margin: 1px 0;
-}
-
-.title-info {
+.post_details_container {
+  gap: 1em;
+  padding: 1em;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 1.4em 0;
+  border: 3px solid;
+  flex-direction: column;
+}
+
+.all_posts_container {
+  padding: 4em 6em;
+}
+
+.post_stats {
+  gap: 2em;
+  display: flex;
+  align-self: flex-end;
+}
+
+.all_posts_container > .post_details_container {
+  margin-bottom: 0.2em;
+}
+
+.recent_comments_container {
+  gap: 0.4em;
+  display: flex;
+  padding: 1em;
+  border: 3px solid;
+  flex-direction: column;
+}
+
+.comment_details_container {
+  gap: 1em;
+  display: flex;
+}
+
+.active {
+  color: red;
+}
+
+.full_post_container {
+  padding: 4em 6em;
+}
+
+.full_comments_container {
+  gap: 0.4em;
+  padding: 1em;
+  display: flex;
+  border: 3px solid;
+  flex-direction: column;
+}
+
+.full_post_container > .post_details_container {
+  margin-bottom: 0.2em;
+  gap: 0;
+}
+
+.full_post_container .post_text {
+  order: 1;
+  display: flex;
+  margin-top: 1em;
 }
