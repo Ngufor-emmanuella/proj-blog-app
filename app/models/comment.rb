@@ -13,6 +13,9 @@ class Comment < ApplicationRecord
 <<<<<<< HEAD
     comment.increment!(:comments_counter)
 =======
+<<<<<<< HEAD
+    comment.increment!(:comments_counter)
+=======
     post.increment!(:comments_counter)
 >>>>>>> origin
 >>>>>>> origin
