@@ -7,6 +7,14 @@ class Comment < ApplicationRecord
   private
 
   def update_comment_counter
+<<<<<<< HEAD
     post.increment!(:comments_counter)
+=======
+<<<<<<< HEAD
+    comment.increment!(:comments_counter)
+=======
+    post.increment!(:comments_counter)
+>>>>>>> origin
+>>>>>>> origin
   end
 end
