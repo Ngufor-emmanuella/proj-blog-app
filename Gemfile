@@ -57,7 +57,6 @@ end
 
 # Capybara, the library that allows us to interact with the browser using Ruby
 
-
 # The following gems aids with the nuts and bolts
 # of interacting with the browser.
 
