@@ -55,12 +55,12 @@ group :development, :test do
   gem 'rspec-rails'
 end
 
- # Capybara, the library that allows us to interact with the browser using Ruby
-  
+# Capybara, the library that allows us to interact with the browser using Ruby
 
-  # The following gems aids with the nuts and bolts
-  # of interacting with the browser.
-  
+
+# The following gems aids with the nuts and bolts
+# of interacting with the browser.
+
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
