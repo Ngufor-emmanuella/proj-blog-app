@@ -6,7 +6,11 @@ class Like < ApplicationRecord
 <<<<<<< HEAD
     like.increment!(:likes_counter)
 =======
+<<<<<<< HEAD
+    like.increment!(:likes_counter)
+=======
     post.increment!(:likes_counter)
+>>>>>>> origin
 >>>>>>> origin
   end
 end
