@@ -127,6 +127,13 @@ To run tests, run the following command:
 - Twitter: [@Ngufor-Emmanuella](https://https//twitter.com/Ngufor-Emmanuella)
 - LinkedIn: [Ngufor-Emmanuella](https://www.linkedin.com/in/Ngufor-Emmanuella)
 
+👤 **Author2**
+
+- GitHub: [@Nowembabazi](https://github.com/Nowembabazi)
+- Twitter: [@NowembabaziN](https://twitter.com/NowembabaziN)
+- LinkedIn: [nowembabazi-nickson](https://linkedin.com/in/nowembabazi-nickson)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
