@@ -1,8 +1,10 @@
 class User < ApplicationRecord
-  has_many :posts, class_name: 'Post', foreign_key: :author_id
-  has_many :comments, class_name: 'Comment', foreign_key: :author_id
-  has_many :likes, class_name: 'Like', foreign_key: :author_id
+  has_many :comments, class_name: 'Comment', foreign_key: 'author_id'
+  has_many :posts, class_name: 'Post', foreign_key: 'author_id'
+  has_many :likes, class_name: 'Like', foreign_key: 'author_id'
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
   validates :name, presence: true
@@ -18,13 +20,13 @@ class User < ApplicationRecord
 
 =======
 <<<<<<< HEAD
+>>>>>>> origin
   validates :name, presence: true, length: { in: 3..25 }
-  validates :posts_counter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
+  validates :posts_counter, presence: true, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
+  validates :photo, presence: true
+  validates :bio, presence: true
 
-=======
->>>>>>> origin
->>>>>>> origin
   def recent_posts
-    Post.order(created_at: :desc).includes(:author).limit(3)
+    posts.order(created_at: :desc).limit(3)
   end
 end
