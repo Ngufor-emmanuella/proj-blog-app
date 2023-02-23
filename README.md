@@ -98,9 +98,9 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  mkdir proj-blog-app
-  cd proj-blog-app
-  git clone git@github.com:Ngufor-emmanuella/proj-blog-app.git
+  mkdir blog-app
+  cd blog-app
+  git clone git@github.com:Nejjari001/blog.git
 ```
 
 ### Install
