@@ -11,10 +11,6 @@ RSpec.describe 'User Index Page', type: :feature do
   describe 'User show page' do
     before(:each) { visit user_path(id: @user.id) }
 
-    # it 'displays a container for the users' do
-    #   expect(page).to have_css('section.single_users_container')
-    # end
-
     it "displays the user's profile picture" do
       expect(page.has_xpath?("//img[@src = '#{@user.photo}' ]"))
     end
@@ -44,11 +40,6 @@ RSpec.describe 'User Index Page', type: :feature do
     it 'has a button to view all user posts' do
       expect(page).to have_link('See all Posts', href: user_posts_path(user_id: @user.id))
     end
-
-    # it 'redirects to the post show page on clicking a user post' do
-    #   click_link(@post.text)
-    #   expect(page).to have_current_path(user_post_path(@user, @post))
-    # end
 
     it 'redirects to open all posts of a user' do
       click_link('See all Posts')
