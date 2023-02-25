@@ -14,7 +14,7 @@
 # Configure Using Gemfile
 # gem 'pg'
 #
-development:
+development: &default
   adapter: postgresql
   encoding: unicode
   database: proj-blog-app_development
